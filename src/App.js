@@ -32,7 +32,7 @@ function App() {
                 </div>
             </section>
             <section id="navbar-container">
-                <nav class="navbar navbar-expand-lg" id="navbar">
+                <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                     <a class="logo" href="#">
                         BH
                     </a>
@@ -91,10 +91,8 @@ function App() {
             <div className="mainPage  mt-lg-5">
                 <section className="container body" id="AboutMe">
                     <div className="infoBoxes">
-                        <div className="col-lg-3 col-sm-12 mainColLeft">
-                            About:
-                        </div>
-                        <div className="col-lg-6 col-sm-12 mainColRight mt-5">
+                        <div className="col-3 mainColLeft">About:</div>
+                        <div className="col-6  mainColRight mt-5">
                             Hello! My name is Blake and problem-solving is my
                             passion. I've always been fairly handy, and for many
                             years that expressed itself in a rich career in the
@@ -106,16 +104,14 @@ function App() {
                             world was opened to me after completing a Full-Stack
                             bootcamp with Coding Dojo, and all of my focus is
                             currently on exploring the depths and possibilities
-                            in Softeware Engineering.
+                            in Software Engineering.
                         </div>
                     </div>
                 </section>
                 <section className="container body" id="languages">
                     <div className="infoBoxes">
-                        <div className="col-lg-3 col-sm-12 mainColLeft mr-5">
-                            Languages:
-                        </div>
-                        <div className="col-lg-6 col-sm-12 mainColRight mt-5">
+                        <div className="col-3 mainColLeft mr-5">Languages:</div>
+                        <div className="col-6  mainColRight mt-5">
                             Full-Stack development experience with Python,
                             Javascript, and C#
                             <br />
@@ -138,17 +134,15 @@ function App() {
                 </section>
                 <section className="container body" id="work">
                     <div className="work">
-                        <div className="col-lg-3 col-sm-12 mainColLeft">
-                            Recent Work:
-                        </div>
-                        <div className="col-lg-6 col-sm-12 mainColRight mt-5">
+                        <div className="col-3  mainColLeft">Recent Work:</div>
+                        <div className="col-6  mainColRight mt-5">
                             <div className="mb-5">
                                 <strong>Wilderness Finder</strong>{" "}
                                 React/C#/MySql
                                 <br />
                                 <br />
                                 <a href="https://github.com/bhunter87">
-                                    <img src="WildernessFinder.gif" alt="" />
+                                    <img src="/WildernessFinder.gif" alt="" />
                                 </a>
                             </div>
                             <div className="mb-5">
@@ -157,7 +151,7 @@ function App() {
                                 <br />
                                 <br />
                                 <a href="https://github.com/bhunter87">
-                                    <img src="Pokemern.gif" alt="" />
+                                    <img src="/Pokemern.gif" alt="" />
                                 </a>
                             </div>
                             <div className="mb-5">

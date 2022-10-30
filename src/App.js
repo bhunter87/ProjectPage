@@ -32,7 +32,7 @@ function App() {
                 </div>
             </section>
             <section id="navbar-container">
-                <div>
+                <div className="navSplit">
                     <nav
                         class="navbar navbar-expand-lg navbar-light "
                         id="navbar"
@@ -54,31 +54,36 @@ function App() {
                             </button>
 
                             <div
-                                class="collapse navbar-collapse drop "
+                                class="collapse navbar-collapse"
                                 id="navbarText"
                             >
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#AboutMe">
-                                            About Me
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#languages">
-                                            Languages
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#work">
-                                            Recent Work
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#AboutMe">
+                                                About Me
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link"
+                                                href="#languages"
+                                            >
+                                                Languages
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#work">
+                                                Recent Work
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="social-part">
                                     <a
                                         href="https://github.com/bhunter87"
@@ -113,7 +118,7 @@ function App() {
 
             <div className="mainPage  mt-lg-5 col">
                 <section className="body" id="AboutMe">
-                    <div className="infoBoxes">
+                    <div className="infoBoxes topInfo">
                         <div className=" mainColLeft">About:</div>
                         <div className="  mainColRight mt-5">
                             Hello! My name is Blake and problem-solving is my
@@ -134,10 +139,11 @@ function App() {
                 <section className="body" id="languages">
                     <div className="infoBoxes">
                         <div className=" mainColLeft colAdjust">Languages:</div>
-                        <div className="  mainColRight colAdjust2">
+                        <div className="  mainColRight ">
                             Full-Stack development experience with C#,
                             Javascript, and Python
                             <hr />
+                            <strong>Technologies</strong>
                             <div className="lastCol">
                                 <ul>
                                     <li>React</li>
@@ -166,7 +172,7 @@ function App() {
                                 React/C#/MySql
                                 <br />
                                 <br />
-                                <a href="https://github.com/bhunter87">
+                                <a href="https://github.com/bhunter87/wildernessfinder">
                                     <img src={WildernessFinder} alt="" />
                                 </a>
                             </div>

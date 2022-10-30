@@ -17,9 +17,10 @@ div.mainPage {
     height: 6em;
 }
 #navbar {
+    display: flex;
     width: 100vw;
-    /* height: 6em; */
     background-color: rgb(251, 246, 219);
+    justify-content: space-between;
 }
 
 .fixed {
@@ -59,14 +60,11 @@ div.mainPage {
 }
 .mainColRight {
     display: flex;
-    /* border-left: solid black 0.3px; */
     padding-left: 4em;
     flex-direction: column;
     padding: 0;
     max-width: 800px;
     width: 65%;
-
-    /* position: absolute; */
 }
 
 .mainColRight img {
@@ -100,23 +98,19 @@ div.mainPage {
     text-decoration: none;
 }
 
-.collapse {
-    justify-content: space-between;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 1.5em;
+.dropdown {
+    margin-right: 2em;
 }
 #languages {
     color: #505d6a;
 }
 
 .infoBoxes {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    position: static;
-    margin-top: 8em;
+    min-height: 100vh;
+    position: relative;
 }
 
 .activeProjects {
@@ -149,11 +143,12 @@ img {
 }
 
 .work {
-    display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    min-height: 100vw;
     margin-top: 3em;
+    display: flex;
+    position: relative;
 }
 .lastCol ul li {
     list-style: none;
@@ -169,38 +164,39 @@ img {
     justify-content: center;
 }
 
-/* .dropup button {
-    height: 2em;
-    width: 3em;
-} */
-
 @media screen and (max-width: 992px) {
     .mainColLeft {
-        flex-direction: row;
-        max-width: max-content;
+        display: block;
         padding: 0;
-        margin: 0;
+        min-width: auto;
     }
     .mainColRight {
         flex-direction: column;
         margin: 0;
         padding: 0;
-        display: inline-flex;
+        display: flex;
+        min-width: auto;
     }
     .colAdjust {
+        margin-right: 3em;
+    }
+    .dropdown {
         margin-right: 1em;
     }
-
     .infoBoxes {
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
+    }
+    .topInfo {
+        margin-top: 20em;
     }
     .work {
-        height: 100vh;
+        display: flex;
+        min-height: 100vh;
         flex-direction: column;
     }
     #navbar-container {
-        margin-top: calc(100vh - 31em);
+        margin-top: calc(100vh - 33em);
     }
     .logo {
         margin-left: 0.5em;
@@ -210,9 +206,8 @@ img {
         padding-left: 4em;
     }
     #homePageView {
-        margin-top: 15em;
-        margin-bottom: 13em;
         text-align: center;
+        height: max-content;
     }
 }
 @media screen and (max-width: 805px) {
@@ -228,7 +223,8 @@ img {
     #navbar-container {
         margin-top: calc(100vh - 31em);
     }
-    #homePageView {
+    .dropdown {
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 600px) {

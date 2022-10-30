@@ -10,6 +10,7 @@ div.mainPage {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    position: absolute;
 }
 #navbar-container {
     margin-top: calc(100vh - 34em);
@@ -146,7 +147,7 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 100vw;
-    margin-top: 3em;
+    margin-top: auto;
     display: flex;
     position: relative;
 }

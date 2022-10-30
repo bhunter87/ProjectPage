@@ -16,6 +16,10 @@ function App() {
             : document.getElementById("navbar").classList.add("fixed");
     });
 
+    const buttonClick = (e) => {
+        e.preventDefault();
+    };
+
     return (
         <>
             <section id="homePageView">
@@ -37,7 +41,7 @@ function App() {
                         class="navbar navbar-expand-lg navbar-light "
                         id="navbar"
                     >
-                        <a class="logo" href="#">
+                        <a class="logo" onClick={(e) => buttonClick(e)}>
                             BH
                         </a>
                         <div className="btn-group dropdown">

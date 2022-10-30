@@ -20,93 +20,102 @@ function App() {
         <>
             <section id="homePageView">
                 <div className="subHeaderName h2 mb-3">Blake Hunter</div>
-                <div className="subheaderText pb-3 pr-5 pl-5">
+                <div className="subheaderText">
                     <div className="mb-2">
-                        <span className="firstLetter">S</span>oftware Engineer
-                        with full stack experience in Python, Javascript
-                        (Node.js, React), and C#.
+                        Software Engineer with full stack experience in Python,
+                        Javascript (Node.js, React), and C#.
                     </div>
                     <div className="pl-2">
-                        <span className="firstLetter">D</span>edicated to
-                        learning and mastering new technologies, with a current
-                        focus on React
+                        Dedicated to learning and mastering new technologies,
+                        with a current focus on React
                     </div>
                 </div>
             </section>
             <section id="navbar-container">
-                <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                    <a class="logo" href="#">
-                        BH
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarText"
-                        aria-controls="navbarText"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
+                <div>
+                    <nav
+                        class="navbar navbar-expand-lg navbar-light "
+                        id="navbar"
                     >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#AboutMe">
-                                    About Me
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#languages">
-                                    Languages
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#work">
-                                    Recent Work
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="social-part">
-                            <a
-                                href="https://github.com/bhunter87"
-                                target="_blank"
+                        <a class="logo" href="#">
+                            BH
+                        </a>
+                        <div className="btn-group dropdown">
+                            <button
+                                class="navbar-toggler mx-5"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarText"
+                                aria-controls="navbarText"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
                             >
-                                <i
-                                    class="fa fa-github text-dark"
-                                    aria-hidden="true"
-                                ></i>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/blake-hunter-55369161/"
-                                target="_blank"
+                                <span class="navbar-toggler-icon mr-5 "></span>
+                            </button>
+
+                            <div
+                                class="collapse navbar-collapse drop "
+                                id="navbarText"
                             >
-                                <i
-                                    class="fa fa-linkedin text-dark"
-                                    aria-hidden="true"
-                                ></i>
-                            </a>
-                            <a href="mailto:<nowiki>bhunter87@gmail.com">
-                                <i
-                                    class="fa fa-envelope text-dark"
-                                    aria-hidden="true"
-                                ></i>
-                            </a>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#AboutMe">
+                                            About Me
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#languages">
+                                            Languages
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#work">
+                                            Recent Work
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="social-part">
+                                    <a
+                                        href="https://github.com/bhunter87"
+                                        target="_blank"
+                                    >
+                                        <i
+                                            class="fa fa-github text-dark"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </a>
+                                    <a
+                                        href="https://www.linkedin.com/in/blake-hunter-55369161/"
+                                        target="_blank"
+                                    >
+                                        <i
+                                            class="fa fa-linkedin text-dark"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </a>
+                                    <a href="mailto:<nowiki>bhunter87@gmail.com">
+                                        <i
+                                            class="fa fa-envelope text-dark"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </section>
 
-            <div className="mainPage  mt-lg-5">
-                <section className="container body" id="AboutMe">
+            <div className="mainPage  mt-lg-5 col">
+                <section className="body" id="AboutMe">
                     <div className="infoBoxes">
-                        <div className="col-3 mainColLeft">About:</div>
-                        <div className="col-6  mainColRight mt-5">
+                        <div className=" mainColLeft">About:</div>
+                        <div className="  mainColRight mt-5">
                             Hello! My name is Blake and problem-solving is my
                             passion. I've always been fairly handy, and for many
                             years that expressed itself in a rich career in the
@@ -122,10 +131,10 @@ function App() {
                         </div>
                     </div>
                 </section>
-                <section className="container body" id="languages">
+                <section className="body" id="languages">
                     <div className="infoBoxes">
-                        <div className="col-3 mainColLeft ">Languages:</div>
-                        <div className="col-6  mainColRight">
+                        <div className=" mainColLeft colAdjust">Languages:</div>
+                        <div className="  mainColRight colAdjust2">
                             Full-Stack development experience with C#,
                             Javascript, and Python
                             <hr />
@@ -145,30 +154,13 @@ function App() {
                                     <li>Axios</li>
                                 </ul>
                             </div>
-                            {/* <br />
-                            <br />
-                            <br />
-                            <strong>Technologies</strong>
-                            React
-                            <br /> Express.js
-                            <br /> Node.js
-                            <br /> Ajax
-                            <br /> MongoDB
-                            <br /> ASP.NET Core
-                            <br />
-                            Flask
-                            <br /> MySql
-                            <br /> CSS3
-                            <br /> HTML5
-                            <br /> Socket.io
-                            <br /> Axios */}
                         </div>
                     </div>
                 </section>
                 <section className="container body" id="work">
                     <div className="work">
-                        <div className="col-3  mainColLeft">Recent Work:</div>
-                        <div className="col-6  mainColRight mt-5">
+                        <div className="  mainColLeft">Recent Work:</div>
+                        <div className=" mainColRight mt-5">
                             <div className="mb-5">
                                 <strong>Wilderness Finder</strong>{" "}
                                 React/C#/MySql

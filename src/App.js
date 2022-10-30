@@ -1,6 +1,8 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-
+const WildernessFinder = require("./img/WildernessFinder.gif");
+const pokemern = require("./img/pokemern.gif");
+const explore = require("./img/explore.gif");
 function App() {
     const [top, setTop] = useState(0);
 
@@ -18,7 +20,7 @@ function App() {
         <>
             <section id="homePageView">
                 <div className="subHeaderName h2 mb-3">Blake Hunter</div>
-                <div className="subheaderText pb-3">
+                <div className="subheaderText pb-3 pr-5 pl-5">
                     <div className="mb-2">
                         <span className="firstLetter">S</span>oftware Engineer
                         with full stack experience in Python, Javascript
@@ -49,9 +51,9 @@ function App() {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    Home <span class="sr-only">(current)</span>
+                                    Home
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -71,18 +73,30 @@ function App() {
                             </li>
                         </ul>
                         <div class="social-part">
-                            <i
-                                class="fa fa-github text-dark"
-                                aria-hidden="true"
-                            ></i>
-                            <i
-                                class="fa fa-linkedin text-dark"
-                                aria-hidden="true"
-                            ></i>
-                            <i
-                                class="fa fa-envelope text-dark"
-                                aria-hidden="true"
-                            ></i>
+                            <a
+                                href="https://github.com/bhunter87"
+                                target="_blank"
+                            >
+                                <i
+                                    class="fa fa-github text-dark"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/blake-hunter-55369161/"
+                                target="_blank"
+                            >
+                                <i
+                                    class="fa fa-linkedin text-dark"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                            <a href="mailto:<nowiki>bhunter87@gmail.com">
+                                <i
+                                    class="fa fa-envelope text-dark"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
                         </div>
                     </div>
                 </nav>
@@ -112,10 +126,29 @@ function App() {
                     <div className="infoBoxes">
                         <div className="col-3 mainColLeft mr-5">Languages:</div>
                         <div className="col-6  mainColRight mt-5">
-                            Full-Stack development experience with Python,
-                            Javascript, and C#
+                            Full-Stack development experience with C#,
+                            Javascript, and Python
+                            <hr />
+                            <div className="lastCol">
+                                <ul>
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                    <li>Express</li>
+                                    <li>Ajax</li>
+                                    <li>MongoDb</li>
+                                </ul>
+                                <ul>
+                                    <li>MySql</li>
+                                    <li>CSS3</li>
+                                    <li>HTML5</li>
+                                    <li>Socket.io</li>
+                                    <li>Axios</li>
+                                </ul>
+                            </div>
+                            {/* <br />
                             <br />
                             <br />
+                            <strong>Technologies</strong>
                             React
                             <br /> Express.js
                             <br /> Node.js
@@ -128,7 +161,7 @@ function App() {
                             <br /> CSS3
                             <br /> HTML5
                             <br /> Socket.io
-                            <br /> Axios
+                            <br /> Axios */}
                         </div>
                     </div>
                 </section>
@@ -142,7 +175,7 @@ function App() {
                                 <br />
                                 <br />
                                 <a href="https://github.com/bhunter87">
-                                    <img src="/WildernessFinder.gif" alt="" />
+                                    <img src={WildernessFinder} alt="" />
                                 </a>
                             </div>
                             <div className="mb-5">
@@ -151,15 +184,15 @@ function App() {
                                 <br />
                                 <br />
                                 <a href="https://github.com/bhunter87">
-                                    <img src="/Pokemern.gif" alt="" />
+                                    <img src={pokemern} alt="" />
                                 </a>
                             </div>
                             <div className="mb-5">
                                 <strong>Explore America API</strong> C# DotNet6
                                 <br />
                                 <br />
-                                <a href="https://github.com/bhunter87">
-                                    <video src="api.webm" alt="" />
+                                <a href="https://exploreamericaapi.web.app/">
+                                    <img src={explore} alt="" />
                                 </a>
                             </div>
                         </div>

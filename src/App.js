@@ -124,8 +124,8 @@ function App() {
                 </section>
                 <section className="container body" id="languages">
                     <div className="infoBoxes">
-                        <div className="col-3 mainColLeft mr-5">Languages:</div>
-                        <div className="col-6  mainColRight mt-5">
+                        <div className="col-3 mainColLeft ">Languages:</div>
+                        <div className="col-6  mainColRight">
                             Full-Stack development experience with C#,
                             Javascript, and Python
                             <hr />

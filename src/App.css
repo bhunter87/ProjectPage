@@ -12,7 +12,7 @@ div.mainPage {
     text-align: center;
     position: relative;
     gap: 0;
-    width: 100vw;
+    width: 100%;
 }
 #navbar-container {
     margin-top: calc(100vh - 34em);
@@ -58,8 +58,7 @@ div.mainPage {
 .mainColLeft {
     font-size: 2em;
     font-weight: 700;
-    text-align: center;
-    margin-right: 2em;
+    text-align: end;
     width: 25%;
 }
 .mainColRight {
@@ -69,6 +68,7 @@ div.mainPage {
     padding: 0;
     max-width: 800px;
     width: 65%;
+    align-items: center;
 }
 
 .mainColRight img {
@@ -161,9 +161,12 @@ img {
     display: flex;
     align-items: center;
     width: 100%;
+    text-align: center;
 }
 .lastCol ul li {
     list-style: none;
+    text-align: center;
+    padding-right: 0.5em;
 }
 .lastCol ul {
     -webkit-padding-start: 0;
@@ -175,12 +178,19 @@ img {
     display: flex;
     justify-content: center;
 }
-
+.aboutBox {
+    max-width: 45%;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+}
 @media screen and (max-width: 992px) {
     .mainColLeft {
         display: block;
         padding: 0;
         min-width: auto;
+        margin: 0;
+        text-align: center;
     }
     .mainColRight {
         flex-direction: column;
@@ -188,9 +198,7 @@ img {
         padding: 0;
         display: flex;
     }
-    .colAdjust {
-        margin-right: 3em;
-    }
+
     .dropdown {
         margin-right: 1em;
     }
@@ -201,6 +209,7 @@ img {
     .topInfo {
         margin-top: 20em;
     }
+
     .work {
         min-height: 100vh;
         flex-direction: column;
@@ -295,9 +304,6 @@ img {
         height: 100vw;
         padding: 0;
     }
-    .colAdjust {
-        margin-right: 0em;
-    }
 }
 @media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (orientation: landscape) {
     #homePageView {
@@ -314,9 +320,6 @@ img {
         position: relative;
         height: 100vw;
         padding: 0;
-    }
-    .colAdjust {
-        margin-right: 0em;
     }
 }
 @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {

@@ -1,3 +1,6 @@
+.mainPage {
+    width: 100vw;
+}
 .social-part .fa {
     padding-right: 20px;
 }
@@ -15,16 +18,16 @@ div.mainPage {
     width: 100%;
 }
 #navbar-container {
-    margin-top: calc(100vh - 34em);
-    width: 100vw;
-    height: fit-content;
+    margin-top: calc(100vh - 32em);
+    width: 100%;
+    height: max-content;
 }
 #navbar {
     display: flex;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(251, 246, 219);
     justify-content: space-between;
-    height: fit-content;
+    height: max-content;
 }
 
 .fixed {
@@ -59,7 +62,6 @@ div.mainPage {
     font-size: 2em;
     font-weight: 700;
     text-align: end;
-    width: 25%;
 }
 .mainColRight {
     display: flex;
@@ -198,6 +200,9 @@ img {
         padding: 0;
         display: flex;
     }
+    .aboutBox {
+        max-width: max-content;
+    }
 
     .dropdown {
         margin-right: 1em;
@@ -218,7 +223,7 @@ img {
         margin-top: calc(100vh - 33em);
     }
     .logo {
-        margin-left: 0.5em;
+        margin-left: 1em;
     }
     .subHeaderText {
         padding-right: 4em;
@@ -231,16 +236,19 @@ img {
 }
 @media screen and (max-width: 805px) {
     #navbar-container {
-        margin-top: calc(100vh - 36.3em);
+        margin-top: calc(100vh - 33em);
     }
     #homePageView {
         margin-top: 15em;
         margin-bottom: 10em;
     }
+    .logo {
+        font-size: 2.5em;
+    }
 }
 @media screen and (max-width: 778px) {
     #navbar-container {
-        margin-top: calc(100vh - 31em);
+        margin-top: calc(100vh - 38em);
     }
     .dropdown {
         margin-right: 0;
@@ -251,7 +259,7 @@ img {
         height: auto;
     }
     #navbar-container {
-        margin-top: calc(100vh - 33em);
+        margin-top: calc(100vh - 45em);
     }
     .logo {
         margin-left: 0.1em;
@@ -268,6 +276,9 @@ img {
     .body {
         padding-right: 1.5em;
         padding-left: 1.5em;
+    }
+    .logo {
+        font-size: 1.75em;
     }
 }
 @media screen and (max-width: 375px) {
@@ -288,7 +299,102 @@ img {
     }
 }
 
+/* iphone XR */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
+}
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: landscape) {
+    #navbar-container {
+        margin-top: calc(100vh - 20em);
+    }
+    #homePageView {
+        margin-top: 9em;
+    }
+    .logo {
+        font-size: 2em;
+    }
+}
+
+/* gal S8 */
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: portrait) {
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+    #navbar-container {
+        margin-top: calc(100vh - 28em);
+    }
+    #homePageView {
+        margin-top: 7em;
+    }
+    .logo {
+        font-size: 2em;
+    }
+}
+
+/* surface duo */
+@media only screen and (min-device-width: 540px) and (max-device-width: 720px) and (orientation: portrait) {
+}
+@media only screen and (min-device-width: 540px) and (max-device-width: 896px) and (orientation: landscape) {
+}
+
+/* iphone SE */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    #navbar-container {
+        margin-top: calc(100vh - 38.5em);
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    #navbar-container {
+        margin-top: calc(100vh - 28.5em);
+    }
+    #homePageView {
+        margin-top: 4.7em;
+    }
+    .logo {
+        font-size: 2em;
+    }
+}
+
+/* gal s9 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 658px) and (orientation: portrait) {
+    #navbar-container {
+        margin-top: calc(100vh - 41.5em);
+    }
+    .logo {
+        margin-left: 1em;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 658px) and (orientation: landscape) {
+    #navbar-container {
+        margin-top: calc(100vh - 28em);
+    }
+    #homePageView {
+        margin-top: 4.7em;
+    }
+    .logo {
+        font-size: 2em;
+    }
+}
+/* GalNote3 */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (orientation: portrait) {
+    #navbar-container {
+        margin-top: calc(100vh - 38.5em);
+    }
+    .logo {
+        margin-left: 1em;
+    }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (orientation: landscape) {
+    #navbar-container {
+        margin-top: calc(100vh - 31em);
+    }
+    #homePageView {
+        margin-top: 7em;
+    }
+    .logo {
+        font-size: 2em;
+    }
+}
+
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: landscape) {
     #homePageView {
         margin-top: 10em;
     }
@@ -302,6 +408,13 @@ img {
         margin: 0;
         position: relative;
         height: 100vw;
+        padding: 0;
+    }
+    .logo {
+        font-size: 2.5em;
+    }
+    .navbar {
+        margin: 0;
         padding: 0;
     }
 }
@@ -319,6 +432,13 @@ img {
         margin: 0;
         position: relative;
         height: 100vw;
+        padding: 0;
+    }
+    .logo {
+        font-size: 2.5em;
+    }
+    .navbar {
+        margin: 0;
         padding: 0;
     }
 }
@@ -341,6 +461,13 @@ img {
     .colAdjust {
         margin-right: 0em;
     }
+    .logo {
+        font-size: 2.5em;
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;
+    }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
     #homePageView {
@@ -361,6 +488,13 @@ img {
     .colAdjust {
         margin-right: 0em;
     }
+    .logo {
+        font-size: 2.5em;
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
@@ -370,9 +504,6 @@ img {
     #navbar-container {
         margin-top: calc(100vh - 28.5em);
     }
-}
-
-@media screen and (orientation: landscape) {
     .logo {
         font-size: 2.5em;
     }
@@ -380,4 +511,4 @@ img {
         margin: 0;
         padding: 0;
     }
-}
+} */

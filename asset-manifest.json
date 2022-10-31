@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ProjectPage/static/css/main.4daa673f.css",
+    "main.css": "/ProjectPage/static/css/main.7c043384.css",
     "main.js": "/ProjectPage/static/js/main.62d42c73.js",
     "static/media/explore.gif": "/ProjectPage/static/media/explore.3ce7dfde2d0aef205d3b.gif",
     "static/media/pokemern.gif": "/ProjectPage/static/media/pokemern.c59d49822775189632d1.gif",
     "static/media/WildernessFinder.gif": "/ProjectPage/static/media/WildernessFinder.7455a0bda67702806a5c.gif",
     "static/media/BlakeHunterResume2022.pdf": "/ProjectPage/static/media/BlakeHunterResume2022.570979a5b62a35849fe2.pdf",
     "index.html": "/ProjectPage/index.html",
-    "main.4daa673f.css.map": "/ProjectPage/static/css/main.4daa673f.css.map",
+    "main.7c043384.css.map": "/ProjectPage/static/css/main.7c043384.css.map",
     "main.62d42c73.js.map": "/ProjectPage/static/js/main.62d42c73.js.map"
   },
   "entrypoints": [
-    "static/css/main.4daa673f.css",
+    "static/css/main.7c043384.css",
     "static/js/main.62d42c73.js"
   ]
 }

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const WildernessFinder = require("./img/WildernessFinder.gif");
 const pokemern = require("./img/pokemern.gif");
 const explore = require("./img/explore.gif");
+const resume = require("./img/BlakeHunterResume2022.pdf");
 function App() {
     const [top, setTop] = useState(0);
 
@@ -84,6 +85,15 @@ function App() {
                                         <li class="nav-item">
                                             <a class="nav-link" href="#work">
                                                 Recent Work
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link"
+                                                href={resume}
+                                                download
+                                            >
+                                                Download Resume
                                             </a>
                                         </li>
                                     </ul>

@@ -17,13 +17,14 @@ div.mainPage {
 #navbar-container {
     margin-top: calc(100vh - 34em);
     width: 100vw;
-    height: 6em;
+    height: fit-content;
 }
 #navbar {
     display: flex;
     width: 100vw;
     background-color: rgb(251, 246, 219);
     justify-content: space-between;
+    height: fit-content;
 }
 
 .fixed {
@@ -277,32 +278,13 @@ img {
         margin-top: calc(100vh - 55em);
     }
 }
-@media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (orientation: landscape) {
-    #homePageView {
-        margin-top: 10em;
-    }
-    #navbar-container {
-        margin-top: calc(100vh - 23em);
-    }
-    #work {
-        width: 100%;
-    }
-    .body {
-        margin: 0;
-        position: relative;
-        height: 100vw;
-        padding: 0;
-    }
-    .colAdjust {
-        margin-right: 0em;
-    }
-}
+
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: landscape) {
     #homePageView {
         margin-top: 10em;
     }
     #navbar-container {
-        margin-top: calc(100vh - 23em);
+        margin-top: calc(100vh - 21em);
     }
     #work {
         width: 100%;
@@ -317,13 +299,32 @@ img {
         margin-right: 0em;
     }
 }
-
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (orientation: landscape) {
+    #homePageView {
+        margin-top: 10em;
+    }
+    #navbar-container {
+        margin-top: calc(100vh - 21em);
+    }
+    #work {
+        width: 100%;
+    }
+    .body {
+        margin: 0;
+        position: relative;
+        height: 100vw;
+        padding: 0;
+    }
+    .colAdjust {
+        margin-right: 0em;
+    }
+}
 @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
     #homePageView {
         margin-top: 8em;
     }
     #navbar-container {
-        margin-top: calc(100vh - 31em);
+        margin-top: calc(100vh - 30em);
     }
     #work {
         width: 100%;
@@ -343,7 +344,7 @@ img {
         margin-top: 7em;
     }
     #navbar-container {
-        margin-top: calc(100vh - 32.5em);
+        margin-top: calc(100vh - 31em);
     }
     #work {
         width: 100%;
@@ -356,5 +357,24 @@ img {
     }
     .colAdjust {
         margin-right: 0em;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    #homePageView {
+        margin-top: 5em;
+    }
+    #navbar-container {
+        margin-top: calc(100vh - 28.5em);
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .logo {
+        font-size: 2.5em;
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;
     }
 }

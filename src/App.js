@@ -90,7 +90,6 @@ function App() {
                                                 <a
                                                     class="nav-link"
                                                     href="#work"
-                                                    data-bs-toggle="collapse"
                                                 >
                                                     Recent Work
                                                 </a>
@@ -186,7 +185,7 @@ function App() {
                     </div>
                 </section>
                 <section className="body" id="work">
-                    <div className="work infoBoxes">
+                    <div className="work infoBoxes" id="work">
                         <div className=" colAdjust mainColLeft">
                             Recent Work:
                         </div>

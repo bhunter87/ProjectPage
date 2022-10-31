@@ -159,12 +159,12 @@ img {
     position: relative;
     width: 100%;
 }
-#work {
+/* #work {
     display: flex;
     align-items: center;
     width: 100%;
     text-align: center;
-}
+} */
 .lastCol ul li {
     list-style: none;
     text-align: center;

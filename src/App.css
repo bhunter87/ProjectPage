@@ -18,7 +18,7 @@ div.mainPage {
     width: 100%;
 }
 #navbar-container {
-    margin-top: calc(100vh - 32em);
+    margin-top: calc(100vh - 33em);
     width: 100%;
     height: max-content;
 }

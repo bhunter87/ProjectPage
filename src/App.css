@@ -244,6 +244,7 @@ img {
     }
     .logo {
         font-size: 2.5em;
+        margin-left: 1em;
     }
 }
 @media screen and (max-width: 778px) {
@@ -262,7 +263,7 @@ img {
         margin-top: calc(100vh - 45em);
     }
     .logo {
-        margin-left: 0.1em;
+        margin-left: 1em;
     }
     .subHeaderText {
         padding-right: 3em;
@@ -393,122 +394,3 @@ img {
         font-size: 2em;
     }
 }
-
-/* @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: landscape) {
-    #homePageView {
-        margin-top: 10em;
-    }
-    #navbar-container {
-        margin-top: calc(100vh - 21em);
-    }
-    #work {
-        width: 100%;
-    }
-    .body {
-        margin: 0;
-        position: relative;
-        height: 100vw;
-        padding: 0;
-    }
-    .logo {
-        font-size: 2.5em;
-    }
-    .navbar {
-        margin: 0;
-        padding: 0;
-    }
-}
-@media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (orientation: landscape) {
-    #homePageView {
-        margin-top: 10em;
-    }
-    #navbar-container {
-        margin-top: calc(100vh - 21em);
-    }
-    #work {
-        width: 100%;
-    }
-    .body {
-        margin: 0;
-        position: relative;
-        height: 100vw;
-        padding: 0;
-    }
-    .logo {
-        font-size: 2.5em;
-    }
-    .navbar {
-        margin: 0;
-        padding: 0;
-    }
-}
-@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
-    #homePageView {
-        margin-top: 8em;
-    }
-    #navbar-container {
-        margin-top: calc(100vh - 30em);
-    }
-    #work {
-        width: 100%;
-    }
-    .body {
-        margin: 0;
-        position: relative;
-        height: 100vw;
-        padding: 0;
-    }
-    .colAdjust {
-        margin-right: 0em;
-    }
-    .logo {
-        font-size: 2.5em;
-    }
-    .navbar {
-        margin: 0;
-        padding: 0;
-    }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-    #homePageView {
-        margin-top: 7em;
-    }
-    #navbar-container {
-        margin-top: calc(100vh - 31em);
-    }
-    #work {
-        width: 100%;
-    }
-    .body {
-        margin: 0;
-        position: relative;
-        height: 100vw;
-        padding: 0;
-    }
-    .colAdjust {
-        margin-right: 0em;
-    }
-    .logo {
-        font-size: 2.5em;
-    }
-    .navbar {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-    #homePageView {
-        margin-top: 5em;
-    }
-    #navbar-container {
-        margin-top: calc(100vh - 28.5em);
-    }
-    .logo {
-        font-size: 2.5em;
-    }
-    .navbar {
-        margin: 0;
-        padding: 0;
-    }
-} */

@@ -177,10 +177,12 @@ function App() {
                         </div>
                     </div>
                 </section>
-                <section className="container body" id="work">
-                    <div className="work">
-                        <div className="  mainColLeft">Recent Work:</div>
-                        <div className=" mainColRight mt-5">
+                <section className="body" id="work">
+                    <div className="work infoBoxes">
+                        <div className=" colAdjust mainColLeft">
+                            Recent Work:
+                        </div>
+                        <div className=" mainColRight">
                             <div className="mb-5">
                                 <strong>Wilderness Finder</strong>{" "}
                                 React/C#/MySql

@@ -64,21 +64,19 @@ function App() {
                             >
                                 <div>
                                     <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a
-                                                class="nav-link"
-                                                href="#"
-                                                data-bs-toggle="collapse"
-                                            >
+                                        <li
+                                            class="nav-item"
+                                            data-bs-toggle="collapse"
+                                        >
+                                            <a class="nav-link" href="#">
                                                 Home
                                             </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="nav-link"
-                                                href="#AboutMe"
-                                                data-bs-toggle="collapse"
-                                            >
+                                        <li
+                                            class="nav-item"
+                                            data-bs-toggle="collapse"
+                                        >
+                                            <a class="nav-link" href="#AboutMe">
                                                 About Me
                                             </a>
                                         </li>
@@ -89,17 +87,15 @@ function App() {
                                             <a
                                                 class="nav-link"
                                                 href="#languages"
-                                                data-bs-toggle="collapse"
                                             >
                                                 Languages
                                             </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="nav-link"
-                                                href="#work"
-                                                data-bs-toggle="collapse"
-                                            >
+                                        <li
+                                            class="nav-item"
+                                            data-bs-toggle="collapse"
+                                        >
+                                            <a class="nav-link" href="#work">
                                                 Recent Work
                                             </a>
                                         </li>

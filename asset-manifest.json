@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/ProjectPage/static/css/main.5d27739b.css",
-    "main.js": "/ProjectPage/static/js/main.728e8046.js",
+    "main.css": "/ProjectPage/static/css/main.c3b830eb.css",
+    "main.js": "/ProjectPage/static/js/main.a1f513be.js",
     "static/media/explore.gif": "/ProjectPage/static/media/explore.3ce7dfde2d0aef205d3b.gif",
     "static/media/pokemern.gif": "/ProjectPage/static/media/pokemern.c59d49822775189632d1.gif",
     "static/media/WildernessFinder.gif": "/ProjectPage/static/media/WildernessFinder.7455a0bda67702806a5c.gif",
+    "static/media/sunset.jpeg": "/ProjectPage/static/media/sunset.a6ad742d19b6669e8d2c.jpeg",
     "static/media/BlakeHunterResume2022.pdf": "/ProjectPage/static/media/BlakeHunterResume2022.570979a5b62a35849fe2.pdf",
     "index.html": "/ProjectPage/index.html",
-    "main.5d27739b.css.map": "/ProjectPage/static/css/main.5d27739b.css.map",
-    "main.728e8046.js.map": "/ProjectPage/static/js/main.728e8046.js.map"
+    "main.c3b830eb.css.map": "/ProjectPage/static/css/main.c3b830eb.css.map",
+    "main.a1f513be.js.map": "/ProjectPage/static/js/main.a1f513be.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d27739b.css",
-    "static/js/main.728e8046.js"
+    "static/css/main.c3b830eb.css",
+    "static/js/main.a1f513be.js"
   ]
 }

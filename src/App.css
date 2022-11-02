@@ -224,8 +224,8 @@ img {
     .mainColLeft {
         display: block;
         padding: 0;
-        min-width: auto;
         margin: 0;
+        min-width: auto;
         text-align: center;
     }
     .mainColRight {
@@ -233,6 +233,7 @@ img {
         margin: 0;
         padding: 0;
         display: flex;
+        width: 100%;
     }
     .aboutBox {
         max-width: max-content;
@@ -266,6 +267,8 @@ img {
     #homePageView {
         text-align: center;
         height: max-content;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 }
 @media screen and (max-width: 805px) {
@@ -411,7 +414,7 @@ img {
 /* GalNote3 */
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (orientation: portrait) {
     #navbar-container {
-        margin-top: calc(100vh - 38.5em);
+        margin-top: calc(100vh - 39.1em);
     }
     .logo {
         margin-left: 1em;

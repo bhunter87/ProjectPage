@@ -194,26 +194,28 @@ function App() {
                             Hey! I'm Blake! Before venturing into the world of
                             software engineering, I spent nearly 20 years
                             working in the trades, from building houses to
-                            running a handyman company. In all that time, I
-                            learned a few key takeaways about myself, most
-                            notably: I'm absolutly in love problem-solving! That
-                            love and a desire to change the direction of my life
-                            lead me to myfreecodecamp where I completed a couple
-                            modules, and after seeing that I had a mind for it
-                            and got a little glimpse of the things you could do,
-                            I took a leap and signed up for a coding bootcamp.
+                            running a handyman company, I've a little of about
+                            everything. In all that time, I learned a few key
+                            takeaways about myself, most notably, the I'm
+                            absolutly in love problem-solving! That love and a
+                            desire to change the direction of my life lead me to
+                            myfreecodecamp where I completed a couple modules
+                            and, after seeing that I had a mind for it and got a
+                            small glimpse of the possibilities, I took a leap
+                            and signed up for a coding bootcamp.
                             <br />
                             <br />
                             While a number of my class struggled through the
                             process, I found myself becoming obsessed with the
-                            possibilities, leading me to range far outside of
-                            the typical bootcamp course work and into things
-                            like web scraping and sockets. Why am I rambling,
-                            you're asking? To hopefully express that I am a
-                            seasoned creator, thinker, and problem solver who's
-                            just been handed a shiny new set of tools, and in
-                            need of a solid team to help guide him through the
-                            process of becoming a Software Engineer
+                            new tools and what I could do with them, leading me
+                            to range far outside of the typical bootcamp course
+                            work and into things like web scraping and
+                            socket.io. Why am I rambling, you may be asking? To
+                            hopefully express that I am a seasoned creator,
+                            thinker, and problem solver who's just been handed a
+                            shiny new set of tools, and in desperate need of a
+                            solid team to help guide him through the process of
+                            becoming a Software Engineer!
                         </div>
                     </div>
                 </section>

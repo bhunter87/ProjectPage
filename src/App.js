@@ -189,7 +189,7 @@ function App() {
                 {/* <div className="mainPage col"> */}
                 <section className="body col" id="AboutMe">
                     <div className="infoBoxes topInfo">
-                        <div className=" mainColLeft">About:</div>
+                        <div className=" mainColLeft">My Story:</div>
                         <div className=" mainColRight aboutBox">
                             Hey! I'm Blake! Before venturing into the world of
                             software engineering, I spent nearly 20 years

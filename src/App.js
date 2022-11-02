@@ -4,23 +4,65 @@ const WildernessFinder = require("./img/WildernessFinder.gif");
 const pokemern = require("./img/pokemern.gif");
 const explore = require("./img/explore.gif");
 const resume = require("./img/BlakeHunterResume2022.pdf");
+
 function App() {
     const [top, setTop] = useState(0);
+    const [bg, setBg] = useState(false);
 
     window.addEventListener("scroll", () => {
         const topBorder = document
             .getElementById("navbar-container")
             .getBoundingClientRect().top;
         setTop(topBorder);
-        topBorder >= 0
-            ? document.getElementById("navbar").classList.remove("fixed")
-            : document.getElementById("navbar").classList.add("fixed");
+        const fixTheNav = () => {
+            document.getElementById("navbar").classList.add("fixed");
+            document.getElementById("AboutMe").classList.add("navFix");
+        };
+        const removeTheNav = () => {
+            document.getElementById("navbar").classList.remove("fixed");
+            document.getElementById("AboutMe").classList.remove("navFix");
+        };
+        topBorder >= 0 ? removeTheNav() : fixTheNav();
     });
 
     const buttonClick = (e) => {
         e.preventDefault();
+        if (!bg) {
+            document.getElementById("root").classList.add("background");
+            document
+                .getElementById("navbar")
+                .classList.add("easterColorChange");
+            document.getElementById("navbar").classList.remove("navbar-light");
+            document.getElementById("navbar").classList.add("navbar-dark");
+            document
+                .getElementById("social-part")
+                .classList.add("faColorChange");
+            document
+                .getElementById("social-part1")
+                .classList.add("faColorChange");
+            document
+                .getElementById("social-part2")
+                .classList.add("faColorChange");
+            setBg(true);
+        } else {
+            document.getElementById("root").classList.remove("background");
+            document
+                .getElementById("navbar")
+                .classList.remove("easterColorChange");
+            document.getElementById("navbar").classList.add("navbar-light");
+            document.getElementById("navbar").classList.remove("navbar-dark");
+            document
+                .getElementById("social-part")
+                .classList.remove("faColorChange");
+            document
+                .getElementById("social-part1")
+                .classList.remove("faColorChange");
+            document
+                .getElementById("social-part2")
+                .classList.remove("faColorChange");
+            setBg(false);
+        }
     };
-
     return (
         <>
             <div className="mainPage">
@@ -43,7 +85,11 @@ function App() {
                             class="navbar navbar-expand-lg navbar-light "
                             id="navbar"
                         >
-                            <a class="logo" onClick={(e) => buttonClick(e)}>
+                            <a
+                                class="logo"
+                                type="submit"
+                                onClick={(e) => buttonClick(e)}
+                            >
                                 BH
                             </a>
                             <div className="btn-group dropdown">
@@ -75,7 +121,7 @@ function App() {
                                                     class="nav-link"
                                                     href="#AboutMe"
                                                 >
-                                                    About Me
+                                                    My Story
                                                 </a>
                                             </li>
                                             <li class="nav-item">
@@ -111,8 +157,9 @@ function App() {
                                             target="_blank"
                                         >
                                             <i
-                                                class="fa fa-github text-dark"
+                                                class="fa fa-github "
                                                 aria-hidden="true"
+                                                id="social-part"
                                             ></i>
                                         </a>
                                         <a
@@ -120,14 +167,16 @@ function App() {
                                             target="_blank"
                                         >
                                             <i
-                                                class="fa fa-linkedin text-dark"
+                                                class="fa fa-linkedin "
                                                 aria-hidden="true"
+                                                id="social-part1"
                                             ></i>
                                         </a>
                                         <a href="mailto:<nowiki>bhunter87@gmail.com">
                                             <i
-                                                class="fa fa-envelope text-dark"
+                                                class="fa fa-envelope"
                                                 aria-hidden="true"
+                                                id="social-part2"
                                             ></i>
                                         </a>
                                     </div>
@@ -142,18 +191,29 @@ function App() {
                     <div className="infoBoxes topInfo">
                         <div className=" mainColLeft">About:</div>
                         <div className=" mainColRight aboutBox">
-                            Hello! My name is Blake and problem-solving is my
-                            passion. I've always been fairly handy, and for many
-                            years that expressed itself in a rich career in the
-                            trades, eventually leading to my starting a small
-                            commercial handyman/IT company.
+                            Hey! I'm Blake! Before venturing into the world of
+                            software engineering, I spent nearly 20 years
+                            working in the trades, from building houses to
+                            running a handyman company. In all that time, I
+                            learned a few key takeaways about myself, most
+                            notably: I'm absolutly in love problem-solving! That
+                            love and a desire to change the direction of my life
+                            lead me to myfreecodecamp where I completed a couple
+                            modules, and after seeing that I had a mind for it
+                            and got a little glimpse of the things you could do,
+                            I took a leap and signed up for a coding bootcamp.
                             <br />
                             <br />
-                            While I enjoy working with my hands, a whole new
-                            world was opened to me after completing a Full-Stack
-                            bootcamp with Coding Dojo, and all of my focus is
-                            currently on exploring the depths and possibilities
-                            in Software Engineering.
+                            While a number of my class struggled through the
+                            process, I found myself becoming obsessed with the
+                            possibilities, leading me to range far outside of
+                            the typical bootcamp course work and into things
+                            like web scraping and sockets. Why am I rambling,
+                            you're asking? To hopefully express that I am a
+                            seasoned creator, thinker, and problem solver who's
+                            just been handed a shiny new set of tools, and in
+                            need of a solid team to help guide him through the
+                            process of becoming a Software Engineer
                         </div>
                     </div>
                 </section>

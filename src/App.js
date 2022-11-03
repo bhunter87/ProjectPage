@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const WildernessFinder = require("./img/WildernessFinder.gif");
 const pokemern = require("./img/pokemern.gif");
 const explore = require("./img/explore.gif");
-const resume = require("./img/BlakeHunterResume2022.pdf");
+const resume = require("./img/BlakeHunterResume.pdf");
 
 function App() {
     const [top, setTop] = useState(0);

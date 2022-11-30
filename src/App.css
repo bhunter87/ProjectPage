@@ -1,6 +1,7 @@
 .mainPage {
     width: 100vw;
 }
+
 .social-part .fa {
     padding-right: 20px;
     background-color: rgba(17, 15, 15, 0.789);
@@ -27,7 +28,9 @@ ul li a {
 .nav-link:hover {
     color: rgba(3, 87, 255, 0.41) !important;
 }
-
+.navbar-light {
+    background-color: rgb(251, 246, 219);
+}
 .easterColorChange {
     color: rgba(255, 255, 255, 0.879) !important;
     border: none !important;
@@ -64,7 +67,6 @@ div.mainPage {
     box-shadow: inset 2px 2px 1px #b3b8bd8e,
         inset 2px 3px 5px rgba(58, 58, 58, 0.3),
         inset -2px -3px 5px rgba(142, 142, 142, 0.312);
-    /* 0px 0px 0.3em 0.0001em #b3b8bd8e; */
     border-radius: 0.2em;
 }
 

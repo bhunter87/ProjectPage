@@ -9,6 +9,7 @@ function App() {
     const [top, setTop] = useState(0);
     const [bg, setBg] = useState(false);
 
+    // NAV BAR
     window.addEventListener("scroll", () => {
         const topBorder = document
             .getElementById("navbar-container")
@@ -25,6 +26,7 @@ function App() {
         topBorder >= 0 ? removeTheNav() : fixTheNav();
     });
 
+    // EASTER EGG
     const buttonClick = (e) => {
         e.preventDefault();
         if (!bg) {
